@@ -19,7 +19,8 @@
 				{
 					v2f o;
 					o.pos = mul(UNITY_MATRIX_MVP,v.vertex);
-					o.uv = v.vertex.xz;
+					o.uv = mul(_Object2World,v.vertex).xz;
+				//	o.uv = v.vertex.xz;
 					return o;
 				}
 		float4 frag(v2f i) : COLOR
