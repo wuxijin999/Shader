@@ -1,4 +1,4 @@
-﻿Shader "Wizard/Ground_Tile" {
+﻿Shader "Wizard/Mask" {
 	Properties{
 		_MainTex("Base", 2D) = "white"
 		_MaskTex("Mask",2D) = "white"
